@@ -1,0 +1,57 @@
+body{
+      background-color: rgb(78, 72, 72);
+
+}
+.container{
+      min-width: 400px;
+      min-height: 300px;
+      background-color: antiquewhite;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+      padding:10px;
+      
+}
+.container input{
+      width:90%;
+      height:50px;
+      border:1px solid rgb(237, 12, 12);
+      outline:0;
+      padding:10px;
+      margin:10px 0 20px;
+      border-radius: 5px;
+      font-size: 40px;
+}
+
+.butt{
+      width:90%;
+      height:40px;
+      /* font-size: 30px; */
+      padding:10px;
+      border-radius: 5px;
+      background-color: blueviolet
+}
+.img {
+      transition:  1s ease-in-out; /* Add transition for opacity */
+      opacity: 0; /* Set initial opacity to 0 */
+}
+.img.loaded {
+      opacity: 1; /* Change opacity to 1 when the image is loaded */
+}
+
+.error{
+      animation :shake 0.1s linear 10;
+}
+@keyframes shake{
+      0%{transform:translateX(0);}
+      25%{transform:translateX(-2px);}
+      50%{transform:translateX(0);}
+      75%{transform:translateX(2px);
+      }
+      100%{transform:translateX(0px);}
+}
